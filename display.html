@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BUILD YOUR OWN PIZZA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .2;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+    </style>
+</head>
+<body id="displayPage">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                   <a href="index.html"><h3 style="text-align: center">Home</h3></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container-fluid" style="padding:0">
+    <h1 id="title1" style="font-weight: 600; margin: 0;">Build Your Own Pizza</h1>
+        <div class="col-lg-12 jumbotron" style="background-color: darkred"  id="dashboard">
+            <header >DASHBOARD</header>
+        </div>
+    <br>
+        <!-- nav toggle content -->
+        <div class="col-lg-12 jumbotron" style="background-color: floralwhite; height: 100%; margin: 0;" id="content">
+            <div class="tab-content">
+                <!--Sankey Chart -->
+             <div class="col-lg-8" style="padding: 0;">
+                 <p style="font-weight: 600">Sankey Chart</p>
+                 <p id="chart">
+             </div>
+                <!-- Google charts-->
+                <div class="col-lg-4" style="padding: 0;" >
+                    <p style="font-weight: 600">Google Chart</p>
+                    <div id="piechart" style="width: 725px; height: 600px;" ></div>
+                </div>
+            </div>
+        </div>
+    <!-- button-->
+    <div id="btns" >
+        <a href="index.html"><button type="submit" class="btn btn-warning btn-lg">Home</button></a>
+    </div>
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Google charts-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+    // Load Charts and the corechart package.
+    google.charts.load('current', {'packages':['corechart','sankey']});
+    google.charts.setOnLoadCallback(drawChart1);
+
+    //localStorage
+    var retrievedObject1 = localStorage.getItem('pepperoni');
+    var retrievedObject2 = localStorage.getItem('italianSausage');
+    var retrievedObject3 = localStorage.getItem('slicedItalianSausage');
+    var retrievedObject4 = localStorage.getItem('phillySteak');
+    var retrievedObject5 = localStorage.getItem('ham');
+    var retrievedObject6 = localStorage.getItem('premiumChicken');
+    var retrievedObject7 = localStorage.getItem('beef');
+    var retrievedObject8 = localStorage.getItem('bacon');
+    var retrievedObject9 = localStorage.getItem('salami');
+    var retrievedObject10 = localStorage.getItem('Banana Peppers');
+    var retrievedObject11 = localStorage.getItem('Black Olives');
+    var retrievedObject12 = localStorage.getItem('Garlic');
+    var retrievedObject13 = localStorage.getItem('Green Peppers');
+    var retrievedObject14 = localStorage.getItem('Jalapeno Peppers');
+    var retrievedObject15 = localStorage.getItem('Mushrooms');
+    var retrievedObject16 = localStorage.getItem('Pineapples');
+    var retrievedObject17 = localStorage.getItem('Onions');
+    var retrievedObject18 = localStorage.getItem('Roasted Red Peppers');
+    var retrievedObject19 = localStorage.getItem('Spinach');
+    var retrievedObject20 = localStorage.getItem('Diced Tomatoes');
+    var retrievedObject21 = localStorage.getItem('Hot Sauce');
+
+    function drawChart1() {
+        console.log(retrievedObject21);
+        var data = google.visualization.arrayToDataTable([
+            ['Topping', 'Quantity'],
+            ['Pepperoni', parseInt(retrievedObject1)],
+            ['italianSausage',      parseInt(retrievedObject2)],
+            ['slicedItalianSausage',  parseInt(retrievedObject3)],
+            ['phillySteak', parseInt(retrievedObject4)],
+            ['ham',    parseInt(retrievedObject5)],
+            ['premiumChicken',    parseInt(retrievedObject6)],
+            ['beef',    parseInt(retrievedObject7)],
+            ['Salami',    parseInt(retrievedObject8)],
+            ['bacon',    parseInt(retrievedObject9)],
+            ['banana peppers',    parseInt(retrievedObject10)],
+            ['black olives',    parseInt(retrievedObject11)],
+            ['garlic',    parseInt(retrievedObject12)],
+            ['green peppers',    parseInt(retrievedObject13)],
+            ['jalapeno peppers',    parseInt(retrievedObject14)],
+            ['mushrooms',    parseInt(retrievedObject15)],
+            ['pineapples',    parseInt(retrievedObject16)],
+            ['onions',    parseInt(retrievedObject17)],
+            ['roasted red peppers',    parseInt(retrievedObject18)],
+            ['spinach',    parseInt(retrievedObject19)],
+            ['diced tomatoes',    parseInt(retrievedObject20)],
+            ['hot sauce',    parseInt(retrievedObject21)],
+        ]);
+
+
+
+        var options = {
+            title: 'Pizza Toppings:',
+            is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+    }
+
+</script>
+
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="sankey.js"></script>
+
+<script>
+
+    var units = "Widgets";
+
+    var margin = {top: 10, right: 10, bottom: 10, left: 10},
+            width = 1200 - margin.left - margin.right,
+            height = 740 - margin.top - margin.bottom;
+
+    var formatNumber = d3.format(",.0f"),    // zero decimal places
+            format = function(d) { return formatNumber(d) + " " + units; },
+            color = d3.scale.category20();
+
+    // append the svg canvas to the page
+    var svg = d3.select("#chart").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+    // Set the sankey diagram properties
+    var sankey = d3.sankey()
+            .nodeWidth(36)
+            .nodePadding(10)
+            .size([width, height]);
+
+    var path = sankey.link();
+
+    // load the data
+    d3.json("sankeygreenhouse.json", function(error, graph) {
+
+        var nodeMap = {};
+        graph.nodes.forEach(function(x) { nodeMap[x.name] = x; });
+        graph.links = graph.links.map(function(x) {
+            return {
+                source: nodeMap[x.source],
+                target: nodeMap[x.target],
+                value: x.value
+            };
+        });
+
+        sankey
+                .nodes(graph.nodes)
+                .links(graph.links)
+                .layout(32);
+
+// add in the links
+        var link = svg.append("g").selectAll(".link")
+                .data(graph.links)
+                .enter().append("path")
+                .attr("class", "link")
+                .attr("d", path)
+                .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+                .sort(function(a, b) { return b.dy - a.dy; });
+
+// add the link titles
+        link.append("title")
+                .text(function(d) {
+                    return d.source.name + " → " +
+                            d.target.name + "\n" + format(d.value); });
+
+// add in the nodes
+        var node = svg.append("g").selectAll(".node")
+                .data(graph.nodes)
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function(d) {
+                    return "translate(" + d.x + "," + d.y + ")"; })
+                .call(d3.behavior.drag()
+                        .origin(function(d) { return d; })
+                        .on("dragstart", function() {
+                            this.parentNode.appendChild(this); })
+                        .on("drag", dragmove));
+
+// add the rectangles for the nodes
+        node.append("rect")
+                .attr("height", function(d) { return d.dy; })
+                .attr("width", sankey.nodeWidth())
+                .style("fill", function(d) {
+                    return d.color = color(d.name.replace(/ .*/, "")); })
+                .style("stroke", function(d) {
+                    return d3.rgb(d.color).darker(2); })
+                .append("title")
+                .text(function(d) {
+                    return d.name + "\n" + format(d.value); });
+
+// add in the title for the nodes
+        node.append("text")
+                .attr("x", -6)
+                .attr("y", function(d) { return d.dy / 2; })
+                .attr("dy", ".35em")
+                .attr("text-anchor", "end")
+                .attr("transform", null)
+                .text(function(d) { return d.name; })
+                .filter(function(d) { return d.x < width / 2; })
+                .attr("x", 6 + sankey.nodeWidth())
+                .attr("text-anchor", "start");
+
+// the function for moving the nodes
+        function dragmove(d) {
+            d3.select(this).attr("transform",
+                    "translate(" + (
+                            d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+                    ) + "," + (
+                            d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                    ) + ")");
+            sankey.relayout();
+            link.attr("d", path);
+        }
+    });
+
+</script>
+
+</body>
+
+</html>

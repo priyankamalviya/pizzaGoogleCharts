@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BUILD YOUR OWN PIZZA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">-->
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="display.html"><h3>Dashboard</h3></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 "><!-- Title bar-->
+                <h1 id="title1" align="center">Build your own pizza</h1>
+            </div>
+        </div>
+            <div class="row ">
+                <ul id="breadcrumb"><!-- Tabs for pizza size, toppings etc.-->
+                      <li class="active"><a data-toggle="tab" href="#home"> SIZE & CRUST</a></li>
+                      <li><a data-toggle="tab" href="#menu1">CHEESE & SAUCE</a></li>
+                      <li><a data-toggle="tab" href="#menu2"> TOPPINGS</a></li>
+                </ul>
+                <!-- nav toggle content -->
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 bg-success jumbotron" style="background:floralwhite !important" id="content">
+                        <div class="tab-content">
+
+                            <div id="home" class="tab-pane fade in active">
+                                <h4 style="text-align: center">CHOOSE SIZE AND CRUST</h4>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <H5>HAND TOSSED</H5>
+                                            <p>Garlic-seasoned crust with a rich, buttery taste</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Small(10")</span>
+                                                    </label>
+                                                    <label class="btn">
+                                                        <input type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Medium(12")</span>
+                                                    </label>
+                                                    <label class="btn">
+                                                        <input type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Large(14")</span>
+                                                    </label>
+                                                    <label class="btn">
+                                                        <input type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> X-Large(16")</span>
+                                                    </label>
+                                                </div>
+                                                <h5>GLUTEN FREE CRUST</h5>
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Small</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 ">
+                                            <H5>HANDMADE PAN</H5>
+                                            <p>Two layers of cheese, toppings to the edge, and a crust that bakes up golden and crispy with a buttery taste</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Medium(12")</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 ">
+                                            <H5>CRUNCHY THIN CRUST</H5>
+                                            <p>Thin enough for the optimum crispy to crunchy ratio</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Medium(12")</span>
+                                                    </label>
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Large(14")</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 ">
+                                            <H5>BROOKLYN STYLE</H5>
+                                            <p>Hand stretched to be big, thin and perfectly foldable.</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Large(14")</span>
+                                                    </label>
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>X-Large(16")</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                   <!-- div for build and cancel buttons-->
+                                <div id="btns1" >
+                                    <a data-toggle="tab" href="#menu1"><button type="submit" class="btn btn-danger">Next</button></a>
+                                    <button type="submit" class="btn btn-success">Cancel</button>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <h3>CHOOSE CHEESE & SAUCE</h3>
+                                <div class="col-xs-6">
+                                    <br>
+                                    <h5>CHOOSE CHEESE</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                        <label class="btn active">
+                                            <input type="checkbox" name='email1' checked><i
+                                                class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i> <span> Cheddar Cheese</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email2'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Feta Cheese</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email3'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Shredded Parmesan Asiago</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email4'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Shredded Provolone Cheese</span>
+                                        </label>
+
+                                    </div>
+                                    </div>
+                                <div class="col-xs-6">
+                                    <br>
+                                    <h5>CHOOSE SAUCE</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                <label class="btn">
+                                    <input type="checkbox" name='email5'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Chilli Sauce</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" name='email6'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Buffalo Sauce</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" name='email7'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Pesto Sauce</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" name='email16'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Hot Sauce</span>
+                                </label>
+                                        </div>
+                                    </div>
+
+                                <div id="btns2" >
+                                    <a data-toggle="tab" href="#menu2"><button type="submit" class="btn btn-danger">Next</button></a>
+                                    <button type="submit" class="btn btn-success">Cancel</button>
+                                </div><!-- bnts2 closes-->
+                            </div><!--menu1 closes -->
+                            <div id="menu2" class="tab-pane fade">
+                                <h3>CHOOSE MEAT & TOPPINGS</h3>
+                                <div class="col-lg-6"><br>
+                                    <h5>CHOOSE MEAT</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+
+                                        <label class="btn" onclick='hideid("id1");'>
+                                            <input type="checkbox" id="ip1" name="email1"><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> <span> Pepperoni</span>
+                                        <div class="range-control" id="id1" data-thumbwidth="20" style="display:none" onclick="event.stopPropagation()">
+                                                <input id="pepperoni" onchange='setQty("pepperoni");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("id2");'>
+                                            <input id="ip2" type="checkbox" name='email2'><i
+                                                class="fa fa-square-o fa-2x" ></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Italian Sausage</span>
+                                            <div class="range-control" id="id2" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="italianSausage" onchange='setQty("italianSausage");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+
+                                        <label class="btn" onclick='hideid("id3");'>
+                                                <input id="ip3"type="checkbox" name='email3'><i
+                                                    class="fa fa-square-o fa-2x" ></i><i
+                                                    class="fa fa-check-square-o fa-2x"></i><span> Sliced Italian Sausage</span>
+                                            <div class="range-control" id="id3" onclick="event.stopPropagation();" data-thumbwidth="20"  style="display: none">
+                                                <input id="slicedItalianSausage" onchange='setQty("slicedItalianSausage");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+
+                                            <label class="btn" onclick='hideid("id4");'>
+                                                <input id="ip4" type="checkbox" name='email4'><i
+                                                    class="fa fa-square-o fa-2x" ></i><i
+                                                    class="fa fa-check-square-o fa-2x"></i><span> Beef</span>
+                                                <div class="range-control" id="id4" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                    <input id="beef" onchange='setQty("beef");' type="range" min="0" max="15" step="1" value="15">
+                                                    <output name="rangeVal">50</output>
+                                                </div>
+                                            </label>
+                                            <label class="btn" onclick='hideid("id5");'>
+                                                <input id="ip5"type="checkbox" name='email5'><i
+                                                    class="fa fa-square-o fa-2x" ></i><i
+                                                    class="fa fa-check-square-o fa-2x" ></i><span> Philly Steak</span>
+                                                <div class="range-control" id="id5" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                    <input id="phillySteak" onchange='setQty("phillySteak");' type="range" min="0" max="15" step="1" value="15">
+                                                    <output name="rangeVal">50</output>
+                                                </div>
+                                            </label>
+                                            <label class="btn" onclick='hideid("id6");'>
+                                                <input id="ip6"type="checkbox" name='email6'><i
+                                                    class="fa fa-square-o fa-2x" ></i><i
+                                                    class="fa fa-check-square-o fa-2x"></i><span> Ham</span>
+                                                <div class="range-control" id="id6" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                    <input id="ham" onchange='setQty("ham");' type="range" min="0" max="15" step="1" value="15">
+                                                    <output name="rangeVal">50</output>
+                                                </div>
+                                            </label>
+                                            <label class="btn" onclick='hideid("id7");'>
+                                                <input id="ip7"type="checkbox" name='email7'><i
+                                                    class="fa fa-square-o fa-2x"></i><i
+                                                    class="fa fa-check-square-o fa-2x" onclick='hideid("id7");'></i><span> Bacon</span>
+                                                <div class="range-control" id="id7" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                    <input id="bacon" onchange='setQty("bacon");' type="range" min="0" max="15" step="1" value="50">
+                                                    <output name="rangeVal">50</output>
+                                                </div>
+                                            </label>
+                                            <label class="btn" onclick='hideid("id8");'>
+                                                <input id="ip8" type="checkbox" name='email8'><i
+                                                    class="fa fa-square-o fa-2x" ></i><i
+                                                    class="fa fa-check-square-o fa-2x"></i><span> Salami</span>
+                                                <div class="range-control" id="id8" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                    <input id="Salami" onchange='setQty("Salami");' type="range" min="0" max="15" step="1" value="15">
+                                                    <output name="rangeVal">50</output>
+                                                </div>
+                                            </label>
+                                            <label class="btn" onclick='hideid("id9");'>
+                                                <input id="ip9" type="checkbox" name='email9'><i
+                                                    class="fa fa-square-o fa-2x"></i><i
+                                                    class="fa fa-check-square-o fa-2x" ></i><span> Premium Chicken</span>
+                                                <div class="range-control" id="id9" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                    <input id="premiumChicken" onchange='setQty("premiumChicken");' type="range" min="0" max="15" step="1" value="15">
+                                                    <output name="rangeVal">50</output>
+                                                </div>
+                                            </label>
+                                     </div>
+                                    </div>
+                                    <div class="col-xs-6"><br>
+                                    <h5>CHOOSE NON-MEATS</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                        <label class="btn" onclick='hideid("in1");'>
+                                            <input id="iv1" type="checkbox" name='email5'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x" ></i><span> Banana Peppers</span>
+                                            <div class="range-control" id="in1" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Banana Peppers" onchange='setQty("Banana Peppers");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in2");'>
+                                            <input id="iv2" type="checkbox" name='email6'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x" ></i><span> Black Olives</span>
+                                            <div class="range-control" id="in2" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Black Olives" onchange='setQty("Black Olives");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in3");'>
+                                            <input id="iv3" type="checkbox" name='email7'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Garlic</span>
+                                            <div class="range-control" id="in3" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Garlic" onchange='setQty("Garlic");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in4");'>
+                                            <input id="iv4" type="checkbox" name='email8'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Green Peppers</span>
+                                            <div class="range-control" id="in4" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Green Peppers" onchange='setQty("Green Peppers");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in5");'>
+                                            <input id="iv5"type="checkbox" name='email9'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Jalapeno Peppers</span>
+                                            <div class="range-control" id="in5" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Jalapeno Peppers" onchange='setQty("Jalapeno Peppers");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in6");'>
+                                            <input id="iv6"type="checkbox" name='email10'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x" ></i><span>Mushrooms</span>
+                                            <div class="range-control" id="in6" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Mushrooms" onchange='setQty("Mushrooms");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in7");'>
+                                            <input id="iv7"type="checkbox" name='email11'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Pineapples</span>
+                                            <div class="range-control" id="in7" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Pineapples" onchange='setQty("Pineapples");'type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in8");'>
+                                            <input id="iv8"type="checkbox" name='email12'><i class="fa fa-square-o fa-2x" ></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Onions</span>
+                                            <div class="range-control" id="in8" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Onions" onchange='setQty("Onions");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in9");'>
+                                            <input id="iv9" type="checkbox" name='email3'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Roasted Red Peppers</span>
+                                            <div class="range-control" id="in9" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Roasted Red Peppers" onchange='setQty("Roasted Red Peppers");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in10");'>
+                                            <input id="iv10" type="checkbox" name='email14'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Spinach</span>
+                                            <div class="range-control" id="in10" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Spinach" onchange='setQty("Spinach");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in11");'>
+                                            <input id="iv11" type="checkbox" name='email15'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Diced Tomatoes</span>
+                                            <div class="range-control" id="in11" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Diced Tomatoes" onchange='setQty("Diced Tomatoes");' type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                        <label class="btn" onclick='hideid("in12");'>
+                                            <input id="iv12" type="checkbox" name='email16'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Hot Sauce</span>
+                                            <div class="range-control" id="in12" onclick="event.stopPropagation();" data-thumbwidth="20" style="display: none">
+                                                <input id="Hot Sauce" onchange='setQty("Hot Sauce");'type="range" min="0" max="15" step="1" value="15">
+                                                <output name="rangeVal">50</output>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div id="btns3" >
+                                    <a href="display.html" ><button type="submit" class="btn btn-success">Build</button></a>
+                                       <button type="submit" class="btn btn-danger">Cancel</button>
+                                   </div>
+                               </div>
+                               </div>
+                           </div>
+
+                       </div>
+                </div>
+        </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript">
+
+        //show or hide
+            function hideid(id) {
+
+                var rid="#"+id;
+                if(!$(rid).is(":visible")) {
+                    $(rid).show();
+                } else {
+                    $(rid).hide();
+                }
+            }
+
+        localStorage.clear();
+        // Store using local storage
+        function setQty(tname){
+
+        localStorage.setItem(tname,document.getElementById(tname).value);
+        }
+
+    //calculate range of value chosen
+        $('.range-control').each(function(){
+
+            var container = $(this),
+                    input = container.find('input'),
+                    output = container.find('output'),
+                    rangeWidth = input.width(),
+                    thumbWidth = container.attr('data-thumbwidth'),
+                    startValue = input.val(),
+                    startOffset = ((rangeWidth - thumbWidth) / 100) * startValue;
+
+            output
+                    .css({
+                        'left' : startOffset
+                    });
+
+            $(input).on('input', function(){
+
+                var value = this.value,
+                        offset = ((rangeWidth - thumbWidth) / 100) * value;
+                console.log(value);
+                output
+                        .val(value)
+                        .css({
+                            'left' : offset
+                        });
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BUILD YOUR OWN PIZZA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="http://placehold.it/150x50&text=Logo" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="display.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 ">
+                <h1 align="center">Build your own pizza</h1>
+            </div>
+        </div>
+            <div class="row ">
+                <ul id="breadcrumb">
+                      <li class="active"><a data-toggle="tab" href="#home"> SIZE & CRUST</a></li>
+                      <li><a data-toggle="tab" href="#menu1">CHEESE & SAUCE</a></li>
+                      <li><a data-toggle="tab" href="#menu2"> TOPPINGS</a></li>
+                </ul>
+                <!-- nav toggle content -->
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 bg-success" id="content">
+                        <div class="tab-content">
+
+                            <div id="home" class="tab-pane fade in active">
+                                <h4 style="text-align: center">CHOOSE SIZE AND CRUST</h4>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-3 bg-info">
+                                            <H5>HAND TOSSED</H5>
+                                            <p>Garlic-seasoned crust with a rich, buttery taste</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Small(10")</span>
+                                                    </label>
+                                                    <label class="btn">
+                                                        <input type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Medium(12")</span>
+                                                    </label>
+                                                    <label class="btn">
+                                                        <input type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Large(14")</span>
+                                                    </label>
+                                                    <label class="btn">
+                                                        <input type="radio" name='gender1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> X-Large(16")</span>
+                                                    </label>
+                                                </div>
+                                                <h5>GLUTEN FREE CRUST</h5>
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Small</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 bg-warning">
+                                            <H5>HANDMADE PAN</H5>
+                                            <p>Two layers of cheese, toppings to the edge, and a crust that bakes up golden and crispy with a buttery taste</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Medium(12")</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 bg-danger">
+                                            <H5>CRUNCHY THIN CRUST</H5>
+                                            <p>Thin enough for the optimum crispy to crunchy ratio</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Medium(12")</span>
+                                                    </label>
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Large(14")</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 bg-success">
+                                            <H5>BROOKLYN STYLE</H5>
+                                            <p>Hand stretched to be big, thin and perfectly foldable.</p>
+                                            <div class="col-xs-12">
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Large(14")</span>
+                                                    </label>
+                                                    <label class="btn active">
+                                                        <input type="radio" name='gender1' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>X-Large(16")</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                   <!-- div for build and cancel buttons-->
+                                <div id="btns1" >
+                                    <button type="submit" class="btn btn-danger">Build</button>
+                                    <button type="submit" class="btn btn-success">Cancel</button>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <h3>CHOOSE CHEESE & SAUCE</h3>
+                                <div class="col-xs-6">
+                                    <br>
+                                    <h5>CHOOSE CHEESE</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                        <label class="btn active">
+                                            <input type="checkbox" name='email1' checked><i
+                                                class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i> <span> Cheddar Cheese</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email2'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Feta Cheese</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email3'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Shredded Parmesan Asiago</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email4'><i class="fa fa-square-o fa-2x"></i><i
+                                                class="fa fa-check-square-o fa-2x"></i><span> Shredded Provolone Cheese</span>
+                                        </label>
+
+                                    </div>
+                                    </div>
+                                <div class="col-xs-6">
+                                    <br>
+                                    <h5>CHOOSE SAUCE</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                <label class="btn">
+                                    <input type="checkbox" name='email5'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Chilli Sauce</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" name='email6'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Buffalo Sauce</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" name='email7'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Pesto Sauce</span>
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" name='email16'><i class="fa fa-square-o fa-2x"></i><i
+                                        class="fa fa-check-square-o fa-2x"></i><span> Hot Sauce</span>
+                                </label>
+                                        </div>
+                                    </div>
+
+
+                                <div id="btns2" >
+                                    <button type="submit" class="btn btn-danger">Build</button>
+                                    <button type="submit" class="btn btn-success">Cancel</button>
+                                </div><!-- bnts2 closes-->
+                            </div><!--menu1 closes -->
+                            <div id="menu2" class="tab-pane fade">
+                                <h3>CHOOSE MEAT & TOPPINGS</h3>
+                                <div class="col-xs-6"><br>
+                                    <h5>CHOOSE MEAT</h5>
+                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                        <label class="btn active">
+                                            <input type="checkbox" name='email1' checked><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> <span> Pepperoni</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email2'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Italian Sausage</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email3'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Sliced Italian Sausage</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email4'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Beef</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email5'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Philly Steak</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email6'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Ham</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email7'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Bacon</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email8'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Salami</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='email9'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Premium Chicken</span>
+                                        </label>
+                                       </div>
+                                </div>
+                                    <!-- Column two of toppings-->
+                                <div class="col-xs-6">
+                                       <br>
+                                       <h5>CHOOSE NON-MEATS</h5>
+                                       <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                           <label class="btn">
+                                               <input type="checkbox" name='email5'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Banana Peppers</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email6'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Black Olives</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email7'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Garlic</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email8'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Green Peppers</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email9'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Jalapeno Peppers</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email10'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span>Mushrooms</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email11'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Pineapples</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email12'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Onions</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email3'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Roasted Red Peppers</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email14'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Spinach</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email15'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Diced Tomatoes</span>
+                                           </label>
+                                           <label class="btn">
+                                               <input type="checkbox" name='email16'><i class="fa fa-square-o fa-2x"></i><i
+                                                   class="fa fa-check-square-o fa-2x"></i><span> Hot Sauce</span>
+                                           </label>
+                                       </div>
+                                </div>
+                                   <div id="btns3" >
+                                       <button type="submit" class="btn btn-danger">Build</button>
+                                       <button type="submit" class="btn btn-success">Cancel</button>
+                                   </div>
+                               </div>
+                               </div>
+                           </div>
+                       </div>
+                </div>
+        </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

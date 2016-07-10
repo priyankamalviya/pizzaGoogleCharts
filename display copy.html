@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BUILD YOUR OWN PIZZA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .node rect {
+            cursor: move;
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        .link {
+            fill: none;
+            stroke: #000;
+            stroke-opacity: .2;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+    </style>
+</head>
+<body id="displayPage">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container-fluid" style="margin: 0">
+    <h1 id="title1" style="font-weight: 600; margin: 0;">Build Your Own Pizza</h1>
+        <div class="col-lg-12  bg-info jumbotron" style="background-color: darkred"  id="dashboard">
+            <header >DASHBOARD</header>
+        </div>
+    <br>
+        <!-- nav toggle content -->
+        <div class="col-lg-12 bg-success jumbotron" style="background-color: floralwhite; height: 100%; margin-bottom: 0;" id="content">
+            <div class="tab-content">
+              <!-- Google charts-->
+             <div class="col-lg-9 bg-info">
+                 <p>Sankey Chart</p>
+                 <div id="sankey_basic" ></div>
+             </div>
+                <!--Sankey Chart -->
+                <div class="col-lg-3 bg-warning">
+                    <p>Google Chart</p>
+                    <div id="piechart" ></div>
+                </div>
+                <!-- button-->
+                <div id="btns" >
+                    <a href="index.html"><button type="submit" class="btn btn-success">Home</button></a>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Google charts-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+    // Load Charts and the corechart package.
+    google.charts.load('current', {'packages':['corechart','sankey']});
+    google.charts.setOnLoadCallback(drawChart1);
+
+    //localStorage
+    var retrievedObject1 = localStorage.getItem('pepperoni');
+    var retrievedObject2 = localStorage.getItem('italianSausage');
+    var retrievedObject3 = localStorage.getItem('slicedItalianSausage');
+    var retrievedObject4 = localStorage.getItem('phillySteak');
+    var retrievedObject5 = localStorage.getItem('ham');
+    var retrievedObject6 = localStorage.getItem('premiumChicken');
+    var retrievedObject7 = localStorage.getItem('beef');
+    var retrievedObject8 = localStorage.getItem('bacon');
+    var retrievedObject9 = localStorage.getItem('beef');
+    //console.log('pepperoni: ', retrievedObject1);
+
+
+    function drawChart1() {
+        console.log(retrievedObject2);
+        var data = google.visualization.arrayToDataTable([
+            ['Topping', 'Quantity'],
+            ['Pepperoni', parseInt(retrievedObject1)],
+            ['italianSausage',      parseInt(retrievedObject2)],
+            ['slicedItalianSausage',  parseInt(retrievedObject3)],
+            ['phillySteak', parseInt(retrievedObject4)],
+            ['ham',    parseInt(retrievedObject5)],
+            ['premiumChicken',    parseInt(retrievedObject6)],
+            ['beef',    parseInt(retrievedObject7)],
+            ['Salami',    parseInt(retrievedObject8)],
+            ['bacon',    parseInt(retrievedObject9)],
+        ]);
+
+        var options = {
+            title: 'Pizza Toppings:'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+    }
+
+    //Sankey chart
+    google.charts.setOnLoadCallback(drawChart2);
+
+    function drawChart2() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+        data.addRows([
+            [ 'Pepperoni', 'italianSausage',  parseInt(retrievedObject1) ],
+            [ 'Pepperoni', 'ham', 7 ],
+            [ 'Pepperoni', 'beef', 6 ],
+            [ 'premiumChicken', 'italianSausage', 2 ],
+            [ 'premiumChicken', 'ham', 9 ],
+            [ 'premiumChicken', 'beef', 4 ]
+        ]);
+
+        var options = {
+            //title: "Sankey Chart",
+            width: 500
+        };
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
+    }
+
+    </script>
+
+</body>
+
+</html>
